@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+
+            <div class="col">
+                <form method="post">
+                    <br><br><br>
+                    <div class="sm-3">
+                        <label for="amount" class="form-label">Enter amount (minimum 100)</label>
+                        <input type="number" id="amount" name="amount" class="form-control" min="100" max="500000" autofocus required/>
+                    </div>
+                    <br>
+                    <div class="sm-3">
+                        <input type="submit" value="Proceed to Payment" class="btn btn-primary" />
+                    </div>
+                    <br><br><br>
+                </form>
+            </div>
+
+            <div class="col"></div>
+        </div>
+    </div>
+    
+</body>
